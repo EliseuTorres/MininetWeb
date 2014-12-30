@@ -1,0 +1,79 @@
+<!--
+ Copyright 2014 Eliseu Silva Torres
+
+ This file is part of MininetWeb.
+
+ MininetWeb is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Mininet is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with POX.  If not, see http://www.gnu.org/licenses.
+-->
+
+
+{% extends "layout.html" %}
+{% block body %}
+    <div class="formarea">
+			<div class="requiredfld"><span class="required"></span> </div>
+				<form action="{{url_for('option')}}" method=post>		
+					<h2>MininetWeb</h2>
+					<div class="subfieldsset">
+						<div class="error"></div>
+						<div class="information"></div>
+						
+						<div>
+							<label for="host1"><span class="required"></span> Host 1</label>
+							<select id="host1" name="host1">
+                                                            <option selected=""></option>
+                                                            {% for h in range(hosts) %}
+                                                                <option value="{{'h%s' %(h + 1)}}">{{'h%s' %(h + 1)}}</option>
+                                                            {% endfor %}
+                                                            </select>
+
+                                                            <label for="Option">Option</label>
+							<select id="option" name="option">
+                                                            <option selected="selected" value="ping">ping</option>
+                                                            <option value="iperf">iperf</option>
+                                                            <option value="iperf2">iperf2</option>
+                                                            <option value="up">up link</option>
+                                                            <option value="down">down link</option>
+                                                            <option value="stop">stop</option>
+							</select>
+
+							<label for="host2">Host 2</label>
+							<select id="host2" name="host2">
+                                                            <option selected="selected"></option>
+                                                            {% for h in range(hosts) %}
+                                                                <option value="{{'h%s' %(h + 1)}}">{{'h%s' %(h + 1)}}</option>
+                                                            {% endfor %}    
+							</select>
+							
+							<br/>
+							<label></label>
+							
+						</div>
+						<div>
+							
+						</div>
+						<div>
+							<label for="Description">Description</label>
+							<textarea name="Description" cols="50" rows="3" id="Description" >{{result}}</textarea>
+						</div>
+							<div>
+							
+							</div><br/>
+					</div>
+					<div class="buttonsarea">
+						<input type="submit" value="Run" name="submit_form"/>
+					</div>
+					<br/>
+				</form>
+			</div>
+{% endblock %}
