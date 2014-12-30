@@ -18,7 +18,23 @@ To use the MinentWeb interface is necessary to install the Flask microframework.
 	
 The Flask is executed by default on port 5000, to configure the port.
 
-  	# iptables -A FORWARD -p tcp --dport 5000 -j ACCEPT	
+  	# iptables -A FORWARD -p tcp --dport 5000 -j ACCEPT
+  	
+Download the project source code
+	
+	$ cd
+	
+	$ git clone https://github.com/EliseuTorres/MininetWeb
+	
+Run the project
+
+	$ cd MininetWeb
+	
+	$ sudo python web.py
+	
+After running the project, open the web browser and access the MininetWeb interface using the ip of the mininet and using the port 5000.
+	
+	ex: x.x.x.x:5000	 	
 
 
                                                 Português
@@ -39,6 +55,22 @@ Para utilizar a interface do MinentWeb é necessario instalar o microframework F
 O Flask é executado por padrão na porta 5000, para configurar a porta.
 
 	# iptables -A FORWARD -p tcp --dport 5000 -j ACCEPT
+	
+Baixar o codigo fonte do projeto
+	
+	$ cd
+	
+	$ git clone https://github.com/EliseuTorres/MininetWeb
+	
+Executar o projeto
+
+	$ cd MininetWeb
+	
+	$ sudo python web.py
+	
+Após executar o projeto, abra o navegador web e acesse a interface do MininetWeb utilizando o ip da maquina e utilizando a porta 5000. 
+	
+	ex: x.x.x.x:5000	
 
 
 
