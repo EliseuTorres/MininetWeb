@@ -1,7 +1,7 @@
 MininetWeb
 ==========
 
-                                                           English
+                                                 English
 
 MininetWeb is a user-friendly web interface to the emulation environment Mininet POX, written in Python using the Flask microframework.
 
@@ -21,7 +21,7 @@ The Flask is executed by default on port 5000, to configure the port.
 	# iptables -A FORWARD -p tcp --dport 5000 -j ACCEPT	
 
 
-                                                             Português
+                                                        Português
 
 MininetWeb é uma interface amigavel web para o ambiente de emulação Mininet POX, escrita em Python utilizando o microframework Flask.
 
