@@ -10,15 +10,15 @@ The MininetWeb was developed by computer science student Eliseu Santos Torres gu
 
 To use the MinentWeb interface is necessary to install the Flask microframework.
   
-  $ sudo pip install flask
+  	$ sudo pip install flask
 	
 	or
 	
-	# pip install flask
+  	# pip install flask
 	
 The Flask is executed by default on port 5000, to configure the port.
 
-	# iptables -A FORWARD -p tcp --dport 5000 -j ACCEPT	
+  	# iptables -A FORWARD -p tcp --dport 5000 -j ACCEPT	
 
 
                                                 Português
