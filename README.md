@@ -5,7 +5,7 @@ MininetWeb
 
 MininetWeb is a user-friendly web interface to the emulation environment Mininet POX, written in Python using the Flask microframework.
 
-The MininetWeb was developed by computer science student Eliseu Santos Torres guided by professor doctor Joberto Sergio Barbosa Martins as final project at the Universidade de Salvador (Unifacs).
+The MininetWeb was developed by computer science student Eliseu Silva Torres guided by professor doctor Joberto Sergio Barbosa Martins as final project at the Universidade de Salvador (Unifacs).
 
 
 To use the MinentWeb interface is necessary to install the Flask microframework.
