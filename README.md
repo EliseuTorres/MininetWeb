@@ -36,7 +36,7 @@ After running the project, open the web browser and access the MininetWeb interf
 	
 	ex: x.x.x.x:5000	 	
 
-
+==============================================================================================================
                                                 Português
 
 MininetWeb é uma interface amigavel web para o ambiente de emulação Mininet POX, escrita em Python utilizando o microframework Flask.
